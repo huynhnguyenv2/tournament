@@ -18,7 +18,7 @@ Get *localhost:3000/players/find-name/:name* to get info player by name
 
 ## Design model
 
-![alt](https://photos.google.com/share/AF1QipPmpafbHmPRQwRKIbFGP8QNh1Ujf8SSEqXcdYab0WC3lUPvtlhTYups75TV182bCQ?key=QUdqUFphdW1pNENnWWp2b2JXRllFbWZldkZkbHZR)
+![alt](https://i.ibb.co/Cs125sx/1.png)
 
 ## Issues
 * I used the app/services/process_csv.rb to read file .csv but the inputs were nil.
