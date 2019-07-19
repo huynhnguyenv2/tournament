@@ -1,6 +1,6 @@
 # README
 
-##Getting started
+## Getting started
 
 To get the Rails server running locally:
 
@@ -10,17 +10,17 @@ To get the Rails server running locally:
 * **rake db:seed** to seed the datas
 * **rails s** to start the local server
 
-##Test the api
+## Test the api
 
 Get *localhost:3000/tournament/matches/:name* to get info matches by tournament name 
 Get *localhost:3000/players/find-matches/:name* to get info matches by player name 
 Get *localhost:3000/players/find-name/:name* to get info player by name 
 
-##Design model
+## Design model
 
-![](https://photos.app.goo.gl/dGb8bnbLBSv3X9Wx5)
+![alt](https://photos.google.com/share/AF1QipPmpafbHmPRQwRKIbFGP8QNh1Ujf8SSEqXcdYab0WC3lUPvtlhTYups75TV182bCQ?key=QUdqUFphdW1pNENnWWp2b2JXRllFbWZldkZkbHZR)
 
-##Issues
+## Issues
 * I used the app/services/process_csv.rb to read file .csv but the inputs were nil.
 
 * In the model Player. Player has_many Links (in model Link) but when I set Player has_many Matches, it's not work. I had change has_many :links to has_many :home_yards to continue.
