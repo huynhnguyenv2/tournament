@@ -10,17 +10,10 @@ class ProcessCsv
     uri = URI(@csv_url)
     csv_text = Net::HTTP.get(uri)
 
-    players = []
-    groups = []
-    matchs = []
-    links = []
-    CSV.foreach(csv_text, headers:true) do |unstriped_row|
-      row = {}
-      unstriped_row.each{ |k, v| row[k.strip] = v}
-      
-      players << {name: row[:player1]} if players.any?{|a| a.name == row[:player1]}
-      groups << {name: row[:group]} if groups.any?{|a| a.name == row[:group]}
-      matchs << {time: row[:time], date: row[:date], venue: row[:venue],}
+    CSV.foreach(csv_text, headers:true) do |row|
+      puts row
     end
   end
 end
+url = "https://raw.githubusercontent.com/dinosysOrg/api-challenge/master/tournament%2010%20ball.csv"
+ProcessCsv.new(url).process
