@@ -1,4 +1,5 @@
 class Group < ApplicationRecord
 	has_many :players
-	has_many :matchs, through: :players
+	has_many :matches, through: :players
+  belongs_to :competition
 end
